@@ -1,0 +1,159 @@
+.contenedor3 {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 5px;
+}
+/*Parte grafica del ahoracdo*/
+.caja {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: 50%;
+}
+/*Fondo ensi*/
+.contenedor {
+    background-image: url('Imagenes/FondoAhocado.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+/*Caja para los botones*/
+.botonera {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+/*Diseño de botones*/
+.boton {
+    border: 0;
+    background-image: linear-gradient(
+        150deg,
+        #00CD40,
+        #09f,
+        #00DDFF
+    );
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+/*Parte del texto del boton*/
+.boton span{
+    background-color: #D3AA74;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+/*Hover del texto*/
+.boton:hover span{
+    background: none;
+}
+/*Activar boton*/
+.boton:active{
+    transform: scale(0.9);
+}
+/*Desactivando todo lo del boton*/
+.no-hover{
+    background-color: initial;
+    color: initial;
+    border: initial;
+    border-radius: initial;
+    padding: initial;
+    cursor: initial;
+    transition: none;
+}
+.boton-no span{
+    background-color: transparent;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+.boton-no{
+    border: 0;
+    background-image: none;
+    border-radius: initial;
+    color: initial;
+    display: initial;
+    font-size: initial;
+    padding: initial;
+    cursor: initial;
+    transition: initial;
+}
+.boton-no:hover span{
+    background: none;
+}
+.boton-no:active{
+    transform: none;
+}
+
+.fila-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 10px;
+    align-content: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea a la izquierda */
+    height: 100vh;
+}
+.canvasAhorcado {
+    position: absolute;
+    top: 90px;
+    right: 200px;
+}
+  
+  
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.fixed-header h1 {
+    margin: 0;
+}
+
+.fixed-header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fixed-header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.fixed-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.content {
+    /* Añade margen superior para evitar que el contenido quede oculto bajo el encabezado fijo */
+    margin-top: 70px;
+    padding: 20px;
+}

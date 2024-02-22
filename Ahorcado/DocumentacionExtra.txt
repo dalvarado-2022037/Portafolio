@@ -1,0 +1,12 @@
+addEventListener = es un método en JavaScript que se utiliza para adjuntar
+un evento a un elemento del DOM (Document Object Model).
+
+function()= Se refiere a la función que se ejecutará cuando ocurra el evento especificado. 
+En otras palabras, es el bloque de código que quieres que se ejecute en respuesta a un evento determinado
+
+function(event)= dentro del evento "keydown" es necesario para acceder a la información del evento que se ha 
+desencadenado, incluida la tecla presionada (event.key).
+
+
+
+
